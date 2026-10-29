@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
 def home_view(request):
-    return render(request, 'portfolio/home.html')
+    return render(request, 'home.html')
+
 def projects_view(request):
-    return render(request, 'portfolio/projects.html')
+    return render(request, 'projects.html')
+
 def skills_view(request):
-    return render(request, 'portfolio/skills.html')
+    return render(request, 'skills.html')
+
+def polls_view(request):
+    return render(request, 'polls.html')
