@@ -1,0 +1,15 @@
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center mb-4">
+        <img src="{% static '/images/avatar.jpg' %}" alt="Profile Picture" class="rounded-circle mx-auto d-block" width="150" height="150">
+    </div>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Hello, I'm [Your Name]!</h1>
+        <p class="lead">Welcome to my personal portfolio website.</p>
+        <hr class="my-4">
+        <p>Explore my projects, skills, and more.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'projects' %}" role="button">View Projects</a>
+    </div>
+</div>
+{% endblock %}
